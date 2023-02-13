@@ -1,0 +1,12 @@
+hr { display: block; height: 1px; border: 0; border-top: 2px solid #bdc3c7; margin: 1em 0; padding: 0; width: 75vw; }
+button { width: 75vw; overflow-wrap: normal; border: 1px solid #bdc3c7; border-radius: 5px; height: 120px; }
+footer { display: flex; justify-content: center; align-items: center; font-size: 12px; width: 100%; }
+h1, h2, h3, h4, h5 { color: #bdc3c7; }
+p { color: #bdc3c7; }
+
+.main { position: absolute; top: 5vh; color: #bdc3c7; }
+
+.ripple { padding: 20px 23px; position: relative; overflow: hidden; }
+.ripple::before { content: ""; position: absolute; background-color: rgba(0,0,0,.1); width: 10%; height: 25%; border-radius: 50%; z-index: 1; top: 35%; left: 45%; -webkit-transform: scale(0); transform: scale(0); }
+.ripple:hover::before { -webkit-transform: scale(12); transform: scale(12); -webkit-transition: border-radius .5s .5s,-webkit-transform .5s; transition: border-radius .5s .5s,-webkit-transform .5s; transition: transform .5s,border-radius .5s .5s; transition: transform .5s,border-radius .5s .5s,-webkit-transform .5s; }
+.ripple:hover::after { content: ""; position: absolute; z-index: 2; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
