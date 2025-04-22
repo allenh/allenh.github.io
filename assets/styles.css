@@ -10,4 +10,6 @@ footer { position: absolute; bottom: 0; color: #bdc3c7; }
 .headerText { margin: 7px; color: #bdc3c7; }
 .svgContainer { height: 50px; width: 50px; fill: #bdc3c7; }
 .socialMediaContainer { display: flex; min-width: 130px; justify-content: space-evenly;  }
-.socialMediaIcon { height: 50px; width: 50px; }
+.iconSize { height: 50px; width:50px; }
+.socialMediaIcon { transform: scale(0.95) }
+.resumeIcon { filter: invert(89%) sepia(6%) saturate(222%) hue-rotate(161deg) brightness(86%) contrast(95%); transform: scale(0.86) translate(-2px, 2px) }  /* filter: change color */
